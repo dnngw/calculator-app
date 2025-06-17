@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="calculator">
+      <!--header-->
+      <div class="header">
+        <div class="title">
+          <h2>Calc</h2>
+        </div>
+        <div class="theme-setting">
+          <div class="theme">
+            <h3>Theme</h3>
+          </div>
+          <div class="slider-container">
+            <div class="slider-number">
+              <div><p>1</p></div>
+              <div><p>2</p></div>
+              <div><p>3</p></div>
+            </div>
+            <div class="slider-track">
+              <div class="slider-area" onclick="moveSlider(1)"></div>
+              <div class="slider-area" onclick="moveSlider(2)"></div>
+              <div class="slider-area" onclick="moveSlider(3)"></div>
+              <div class="slider-button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Output-->
+      <div class="output-section">
+        <div class="output-value">
+          <p class="value">0</p>
+        </div>
+      </div>
+      <!--keyboard-->
+      <div class="keyboard-section">
+        <div class="grid-container">
+          <div class="grid-child child-1" onclick="showValue(7)">7</div>
+          <div class="grid-child child-2" onclick="showValue(8)">8</div>
+          <div class="grid-child child-3" onclick="showValue(9)">9</div>
+          <div class="grid-child child-4" onclick="clearText()">DEL</div>
+          <div class="grid-child child-5" onclick="showValue(4)">4</div>
+          <div class="grid-child child-6" onclick="showValue(5)">5</div>
+          <div class="grid-child child-7" onclick="showValue(6)">6</div>
+          <div class="grid-child child-8" onclick="showValue('+')">+</div>
+          <div class="grid-child child-9" onclick="showValue(1)">1</div>
+          <div class="grid-child child-10"onclick="showValue(2)">2</div>
+          <div class="grid-child child-11"onclick="showValue(3)">3</div>
+          <div class="grid-child child-12"onclick="showValue('-')">-</div>
+          <div class="grid-child child-13"onclick="showValue('.')">.</div>
+          <div class="grid-child child-14"onclick="showValue(0)">0</div>
+          <div class="grid-child child-15"onclick="showValue('/')">/</div>
+          <div class="grid-child child-16"onclick="showValue('*')">x</div>
+          <div class="grid-child reset" onclick="reset()">RESET</div>
+          <div class="grid-child total" onclick="calculate()">=</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--script-->
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
